@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+}
+
+.container{
+    width:95%;
+    height:92vh;
+    margin:25px auto;
+    border-radius:25px;
+    overflow:hidden;
+    display:flex;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.left{
+    width:60%;
+    background:#FFC600;
+    position:relative;
+}
+
+.right{
+    width:40%;
+    background:#fff4d5;
+    position:relative;
+}
+
+/* Logo */
+
+.logo{
+    width:170px;
+    position:absolute;
+    top:40px;
+    left:40px;
+}
+
+/* Text */
+
+.content{
+    position:absolute;
+    top:180px;
+    left:80px;
+}
+
+.content h4{
+    letter-spacing:8px;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.content h1{
+    font-size:120px;
+    font-weight:900;
+    margin-bottom:25px;
+}
+
+.content p{
+    width:470px;
+    font-size:20px;
+    line-height:45px;
+    color:#333;
+}
+
+.number{
+    display:flex;
+    align-items:center;
+    margin-top:50px;
+}
+
+.line{
+    width:60px;
+    height:4px;
+    background:#000;
+    margin-right:20px;
+}
+
+.number h3{
+    font-size:30px;
+}
+
+/* Pokeball */
+
+.pokeball{
+    width:220px;
+    height:220px;
+    border:18px solid rgba(0,0,0,.08);
+    border-radius:50%;
+    position:absolute;
+    bottom:-80px;
+    left:-40px;
+}
+
+.pokeball::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:18px;
+    background:rgba(0,0,0,.08);
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.pokeball::after{
+    content:"";
+    width:60px;
+    height:60px;
+    border:18px solid rgba(0,0,0,.08);
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/* Pikachu */
+
+.pikachu{
+    width:760px;
+    position:absolute;
+    left:-250px;
+    top:80px;
+}
+
+/* Menu */
+
+.menu{
+    font-size:50px;
+    position:absolute;
+    top:40px;
+    right:40px;
+    cursor:pointer;
+}
+
+/* Dots */
+
+.dots{
+    position:absolute;
+    right:35px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.dots span{
+    display:block;
+    width:14px;
+    height:14px;
+    background:#ffd43b;
+    border-radius:50%;
+    margin:22px 0;
+}
+
+.dots .active{
+    background:#000;
+}
