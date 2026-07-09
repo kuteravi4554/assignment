@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    position: relative;
+}
+
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.left-section {
+    width: 50%;
+    height: 100%;
+
+    background-color: #f8f8f6;
+
+    padding: 38px 50px;
+
+    position: relative;
+}
+
+
+.left-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 95px;
+}
+
+
+.left-header h1 {
+    color: #0b302b;
+
+    font-size: 27px;
+
+    letter-spacing: 2px;
+}
+
+
+.search-box {
+    width: 345px;
+    height: 52px;
+
+    padding: 0 20px;
+
+    background-color: #ededed;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.search-box span {
+    font-size: 30px;
+}
+
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   CLASSIFICATION TITLE
+========================= */
+
+.classification-title {
+    position: absolute;
+
+    left: 55px;
+    top: 310px;
+
+    color: #0b302b;
+
+    font-family: Georgia, serif;
+
+    font-size: 52px;
+
+    font-style: italic;
+
+    writing-mode: vertical-rl;
+
+    transform: rotate(180deg);
+}
+
+
+/* =========================
+   CLASSIFICATION LIST
+========================= */
+
+.classification-list {
+    position: absolute;
+
+    top: 250px;
+    left: 250px;
+
+    width: 250px;
+}
+
+
+.item {
+    min-height: 100px;
+
+    display: flex;
+
+    gap: 18px;
+
+    position: relative;
+}
+
+
+.item::after {
+    content: "";
+
+    position: absolute;
+
+    width: 210px;
+    height: 1px;
+
+    left: 30px;
+    bottom: 15px;
+
+    background-color: #ddd;
+}
+
+
+.dot {
+    width: 10px;
+    height: 10px;
+
+    margin-top: 8px;
+
+    background-color: #c63d35;
+
+    border-radius: 50%;
+}
+
+
+.item h3 {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.item p {
+    font-size: 17px;
+}
+
+
+/* =========================
+   CENTER INSECT IMAGE
+========================= */
+
+.insect-image {
+    width: 400px;
+    height: 700px;
+
+    position: absolute;
+
+    left: 50%;
+    top: 52%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 10;
+}
+
+
+.insect-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.right-section {
+    width: 50%;
+    height: 100%;
+
+    padding: 50px 70px;
+
+    background: linear-gradient(
+        135deg,
+        #c33c32,
+        #cf3027
+    );
+
+    color: white;
+
+    position: relative;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+
+.right-content {
+    width: 400px;
+
+    margin-left: 230px;
+
+    margin-top: 140px;
+}
+
+
+.right-content > h2 {
+    font-family: Georgia, serif;
+
+    font-size: 52px;
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    margin-bottom: 55px;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.information {
+    display: flex;
+
+    gap: 35px;
+}
+
+
+.size-box {
+    width: 110px;
+
+    padding-right: 25px;
+
+    border-right: 1px solid white;
+
+    text-align: center;
+}
+
+
+.bug-icon {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+
+.size-box p {
+    font-size: 15px;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+.detail-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.detail-item > span {
+    color: #ead29e;
+
+    font-size: 28px;
+}
+
+
+.detail-item p {
+    font-size: 15px;
+
+    margin-bottom: 6px;
+}
+
+
+.detail-item strong {
+    font-size: 15px;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price {
+    margin-top: 45px;
+
+    color: #ead29e;
+
+    font-size: 40px;
+}
+
+
+/* =========================
+   OPTIONS
+========================= */
+
+.options {
+    margin-top: 25px;
+}
+
+
+.option {
+    margin-bottom: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.switch {
+    width: 40px;
+    height: 21px;
+
+    padding: 2px;
+
+    background-color: rgba(255,255,255,0.4);
+
+    border-radius: 20px;
+}
+
+
+.switch span {
+    display: block;
+
+    width: 17px;
+    height: 17px;
+
+    background-color: white;
+
+    border-radius: 50%;
+}
+
+
+.option p {
+    font-size: 15px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.collection-btn {
+    width: 260px;
+
+    margin-top: 20px;
+
+    padding: 17px;
+
+    background-color: #ead29e;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    body {
+        overflow: auto;
+    }
+
+
+    .container {
+        height: auto;
+
+        flex-direction: column;
+    }
+
+
+    .left-section,
+    .right-section {
+        width: 100%;
+
+        min-height: 100vh;
+    }
+
+
+    .insect-image {
+        display: none;
+    }
+
+
+    .right-content {
+        margin-left: 0;
+    }
+}
