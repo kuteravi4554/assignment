@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    width: 100%;
+    padding: 20px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.get-started {
+    padding: 15px 22px;
+
+    background-color: #171717;
+    color: #fff;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ================= MAIN ================= */
+
+main {
+    width: 100%;
+    padding: 40px;
+}
+
+/* ================= HEADING ================= */
+
+main > h1 {
+    text-align: center;
+
+    font-size: 120px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+/* ================= FILTER BUTTONS ================= */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 35px;
+}
+
+.filters button {
+    padding: 14px 25px;
+
+    background-color: #171717;
+    color: #fff;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.filters .active {
+    background-color: #ff4b0b;
+}
+
+/* ================= CARDS CONTAINER ================= */
+
+.cards {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 12px;
+}
+
+/* ================= SINGLE CARD ================= */
+
+.card {
+    width: 32%;
+
+    background-color: #141414;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+/* ================= CARD IMAGE ================= */
+
+.image-box {
+    width: 100%;
+    height: 230px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ================= CARD CONTENT ================= */
+
+.card-content {
+    padding: 18px 20px 22px;
+}
+
+.card-content span {
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    background-color: #57200e;
+    color: #ff8a58;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.card-content h2 {
+    color: #fff;
+
+    font-size: 22px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.card-content p {
+    color: #777;
+
+    font-size: 15px;
+}
+
+/* ================= HOVER EFFECT ================= */
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff4b0b;
+}
+
+.filters button {
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #ff4b0b;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    main > h1 {
+        font-size: 70px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main > h1 {
+        font-size: 50px;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
