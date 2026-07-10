@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Assignment</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #888;
+            margin-bottom: 50px;
+        }
+
+        .designs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            height: 180px;
+
+            background-color: #1d1d1d;
+            color: white;
+
+            border-radius: 15px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+
+            text-decoration: none;
+            font-size: 25px;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background-color: #ff4b0b;
+        }
+
+        @media (max-width: 800px) {
+            .designs {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>A2 Assignment</h1>
+
+        <p class="subtitle">
+            CSS Flexbox & Position Properties
+        </p>
+
+        <div class="designs">
+
+            <a href="./design1/index.html" class="card">
+                Design 1
+            </a>
+
+            <a href="./design2/index.html" class="card">
+                Design 2
+            </a>
+
+            <a href="./design3/index.html" class="card">
+                Design 3
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

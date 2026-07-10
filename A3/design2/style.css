@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #160b12;
+
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 20px 60px 60px;
+
+    background:
+        radial-gradient(
+            circle at 70% 40%,
+            rgba(85, 18, 132, 0.8),
+            transparent 38%
+        ),
+
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(200, 0, 70, 0.65),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            120deg,
+            #180d12,
+            #180916
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+
+header {
+    height: 55px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* LOGO */
+
+
+.logo {
+    font-size: 14px;
+
+    line-height: 0.8;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* NAVBAR */
+
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+nav a {
+    color: #c8bbc5;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    padding-bottom: 8px;
+
+    position: relative;
+}
+
+
+nav a.active {
+    color: white;
+}
+
+
+nav a.active::after {
+
+    content: "";
+
+    width: 100%;
+    height: 1px;
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    background-color: #d61b67;
+}
+
+
+/* MENU */
+
+
+.menu {
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+
+.main-content {
+    height: 430px;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+
+.left-content {
+    width: 48%;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.left-content h1 {
+
+    font-size: 80px;
+
+    font-weight: 400;
+
+    line-height: 0.7;
+
+    letter-spacing: -5px;
+
+    margin-bottom: 40px;
+}
+
+
+.left-content p {
+
+    color: #c2b7bd;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+
+.buttons {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.buttons button {
+
+    width: 150px;
+    height: 43px;
+
+    color: white;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+
+.play-btn {
+
+    border: none;
+
+    background: linear-gradient(
+        90deg,
+        #d31569,
+        #e87817
+    );
+}
+
+
+.play-btn span {
+
+    margin-right: 8px;
+
+    padding: 5px 7px;
+
+    background-color: white;
+
+    color: #c81965;
+
+    border-radius: 50%;
+}
+
+
+.trailer-btn {
+
+    background: transparent;
+
+    border: 1px solid #a9165b;
+}
+
+
+.trailer-btn span {
+
+    margin-right: 8px;
+}
+
+
+/* =========================
+   SCROLL
+========================= */
+
+
+.scroll {
+
+    position: absolute;
+
+    left: 48%;
+    top: 150px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.scroll span {
+
+    font-size: 10px;
+
+    writing-mode: vertical-rl;
+
+    transform: rotate(180deg);
+}
+
+
+.scroll-line {
+
+    width: 2px;
+    height: 50px;
+
+    margin-top: 15px;
+
+    background-color: #c72b55;
+}
+
+
+/* =========================
+   GUARD IMAGE
+========================= */
+
+
+.guard {
+
+    width: 480px;
+    height: 520px;
+
+    position: absolute;
+
+    right: 200px;
+    bottom: -20px;
+
+    z-index: 3;
+}
+
+
+.guard img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+
+.social {
+
+    position: absolute;
+
+    right: 10px;
+    top: 150px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+    z-index: 6;
+}
+
+
+.social a {
+
+    color: #b82962;
+
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   BOTTOM CARDS
+========================= */
+
+
+.bottom-cards {
+
+    width: calc(100% - 40px);
+
+    height: 180px;
+
+    margin: -5px auto 0;
+
+    padding: 18px;
+
+    background-color: rgba(42, 9, 26, 0.85);
+
+    border-radius: 20px;
+
+    display: flex;
+
+    gap: 15px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+.video-card {
+
+    width: 33.33%;
+    height: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+
+.video-card img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.video-card button {
+
+    width: 32px;
+    height: 32px;
+
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   BACKGROUND TEXT
+========================= */
+
+
+.bg-text {
+
+    position: absolute;
+
+    color: rgba(255, 255, 255, 0.04);
+
+    font-size: 100px;
+
+    font-weight: bold;
+
+    z-index: 1;
+}
+
+
+.bg-left {
+
+    left: 80px;
+
+    bottom: 190px;
+}
+
+
+.bg-right {
+
+    right: -100px;
+
+    top: 200px;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media (max-width: 850px) {
+
+    .hero {
+        padding: 20px;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+
+    .left-content {
+        width: 100%;
+    }
+
+
+    .left-content h1 {
+        font-size: 60px;
+    }
+
+
+    .guard {
+        opacity: 0.5;
+
+        right: -100px;
+    }
+
+
+    .bottom-cards {
+        height: auto;
+
+        flex-direction: column;
+    }
+
+
+    .video-card {
+        width: 100%;
+        height: 200px;
+    }
+}
